@@ -1,0 +1,527 @@
+@font-face {
+    font-family: 'MyOpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype'), 
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MyOpenSans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype'), 
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@import "normalize";
+
+body {
+    margin: 0;
+    font-family: 'MyOpenSans',Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.header {
+    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+        text-align: center;
+        padding: 30px 0;
+
+        & svg {
+            width: 130px;
+            color: #fff;
+        }
+    }
+
+    &__text {
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 70px 0;
+    }
+
+    &__buttons {
+        padding-bottom: 30px;
+        &__link {
+            display: flex;
+            background-color: #5e42b0;
+            border-radius: 20px;
+            font-size: .6rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 0 5px calc(50% - 50px);
+
+            & svg {
+                fill: #fff;
+                height: 1.5rem;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.main {
+    &__block {
+        &-white {
+            background-color: #fafafa;
+        }
+
+        &-gray {
+            background-color: #f5f4f9;
+        }
+
+        &-purple {
+            background-color: #5e42b0;
+        }
+
+        &-purple-dark {
+            background-color: #090c35;
+        }
+
+        &__header_one {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: #e7e7e7;
+        }
+
+        &__img {
+            text-align: center;
+            margin-bottom: -30px;
+
+            & img {
+                max-width: 100%;
+            }
+        }
+
+        &__header_two {
+            margin: 50px 0 15px;
+
+            &__number {
+                font-size: .9rem;
+                border-bottom: 4px solid #5e42b0;
+                vertical-align: top;
+                color: #000;
+            }
+
+            .main__block-purple &__number {
+                border-bottom: 4px solid #fff;
+            }
+
+            .main__block-purple-dark &__number {
+                color: #7c5dce;
+                border-bottom: 4px solid #fff;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                color: #c1c1c1;
+            }
+        }
+
+        &__text {
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        .main__block-purple &__text,
+        .main__block-purple-dark &__text {
+            color: #fff;
+        }
+
+        &-img {
+            & img {
+                display: flex;
+                width: 100%;
+            }
+
+            &__num {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #5e42b0;
+                width: 70px;
+                height: 65px;
+                margin-top: -50px;
+
+                & div {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: .95rem;
+                    border-bottom: 4px solid #8f7bc8;
+                }
+            }
+
+            &__header {
+                margin: 10px 0 5px;
+
+                &__text {
+                    font-size: 2rem;
+                    color: #e7e7e7;
+                }
+            }
+
+            &__text {
+                margin: 0 0 70px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo-one {
+        text-align: center;
+        padding: 100px 0 50px;
+        &__wrapper {
+            display: inline-block;
+            padding: 12px 9px 7px;
+            background-color: #53399e;
+            border-radius: 15px;
+
+            & svg {
+                width: 50px;
+            }
+        }        
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 50px;
+        &__one {
+            color: #fff;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        &__two {
+            color: #9b8ec1;
+            font-size: .9rem;
+            font-weight: 800;
+        }
+    }
+
+    &__buttons {
+        padding-bottom: 30px;
+
+        &__link {
+            display: flex;
+            background-color: #5e42b0;
+            border-radius: 20px;
+            font-size: .6rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 0 5px calc(50% - 50px);
+
+            & svg {
+                fill: #fff;
+                height: 1.5rem;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__logo-two {
+        text-align: center;
+        padding: 50px 0 5px;
+
+        & svg {
+            width: 130px;
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .header {
+        &__logo {
+            & svg {
+                width: 180px;
+            }
+        }
+        &__text {
+            font-size: 2.5rem;
+            padding: 70px 50px;
+        }
+        &__buttons {
+            &__link {
+                border-radius: 50px;
+                font-size: .75rem;
+                padding: 16px 0 16px calc(50% - 85px);
+
+                & svg {
+                    height: 2.1rem;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &__logo {
+            & svg {
+                width: 210px;
+            }
+        }
+
+        &__text {
+            font-size: 3.8rem;
+            padding: 150px 50px 230px;
+        }
+
+        &__buttons {
+            padding-bottom: 100px;
+
+            &__link {
+                border-radius: 50px;
+                font-size: .9rem;
+                padding: 25px 0 25px calc(50% - 110px);
+
+                & svg {
+                    height: 3rem;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    .main {
+        &__block {
+
+            &__img-half {
+                position: absolute;
+                z-index: 1;
+                top: 100px;
+                right: -20px;
+            }
+
+            &__img-half-two {
+                position: absolute;
+                z-index: 1;
+                top: 30px;
+                right: 0px;
+            }
+
+            &__header_one {
+                font-size: 5rem;
+                margin: 50px 0 0;
+            }
+
+            &__img {
+                margin-bottom: -70px;
+            }
+
+            &__header_two {
+                margin: 50px 0 15px;
+
+                &__number {
+                    font-size: 1.4rem;
+                }
+
+                &__text {
+                    font-size: 2rem;
+                }
+            }
+
+            &-img {
+                &__num {
+                    width: 90px;
+                    height: 85px;
+                    margin-top: -60px;
+
+                    & div {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &__header {
+                    &__text {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__logo-one {
+            text-align: center;
+            padding: 100px 0 50px;
+            &__wrapper {
+                display: inline-block;
+                padding: 12px 9px 7px;
+                background-color: #53399e;
+                border-radius: 15px;
+    
+                & svg {
+                    width: 80px;
+                }
+            }        
+        }
+    
+        &__text {
+            margin-bottom: 200px;
+            &__one {
+                font-size: 5rem;
+            }
+            &__two {
+                font-size: 2.3rem;
+            }
+        }
+    
+        &__buttons {
+            padding-bottom: 100px;
+
+            &__link {
+                border-radius: 50px;
+                font-size: .9rem;
+                padding: 25px 0 25px calc(50% - 110px);
+
+                & svg {
+                    height: 3rem;
+                    margin-right: 25px;
+                }
+            }
+        }
+    
+        &__logo-two {
+            padding: 50px 0 15px;
+
+            & svg {
+                width: 210px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        &__logo {
+            & svg {
+                width: 210px;
+            }
+        }
+        &__text {
+            font-size: 5rem;
+            padding: 150px 50px 230px;
+        }
+        &__buttons {
+            padding-bottom: 110px;
+            &__link {
+                border-radius: 50px;
+                font-size: .9rem;
+                padding: 25px 0 25px calc(50% - 110px);
+
+                & svg {
+                    height: 3rem;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    .main {
+        &__block {
+            &-img {
+                &__num {
+                    margin: 60px 0 -100px -60px;
+                }
+                &__num.-left{
+                    margin: 60px -60px 0 -60px;
+                }
+                &__header {
+                    padding: 0 0 60px 60px;
+                }
+    
+                &__text {
+                    padding-left: 60px;
+                }
+            }            
+        }
+    }
+    
+    .footer {
+        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__logo-one {
+            text-align: right;   
+            padding: 200px 0 300px;
+            &__wrapper {
+                display: inline-block;
+                padding: 15px 10px 10px;
+                border-radius: 15px;
+                & svg {
+                    width: 120px;
+                }
+            }
+        }
+    
+        &__text {
+            margin-bottom: 0;
+            padding-top: 175px;
+
+            &__one {
+                text-align: left
+            }
+            &__two {
+                text-align: left
+            }
+        }
+    
+        &__buttons {
+            padding-bottom: 100px;
+
+            &__link {
+                border-radius: 50px;
+                font-size: .9rem;
+                padding: 25px 0 25px calc(50% - 110px);
+
+                & svg {
+                    height: 3rem;
+                    margin-right: 25px;
+                }
+            }
+        }
+    
+        &__logo-two {
+            padding: 50px 0 15px;
+
+            & svg {
+                width: 210px;
+            }
+        }
+    }
+}
