@@ -20,7 +20,7 @@
 
 body {
     margin: 0;
-    font-family: 'MyOpenSans',Arial,sans-serif;
+    font-family: MyOpenSans, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -30,497 +30,716 @@ body {
 }
 
 .header {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_767.jpg);
+    background: linear-gradient(rgba(19, 12, 50, 0.90), rgba(19, 12, 50, 0.90)), url(../img/football_767.jpg);
+    background-color: rgba(19, 12, 44, 0.8);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 6.25vw 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     &__logo {
-        text-align: center;
-        padding: 30px 0;
-
         & svg {
-            width: 130px;
-            color: #fff;
+            width: 42vw;
         }
     }
 
     &__text {
         font-weight: 800;
-        font-size: 1.6rem;
+        font-size: 9vw;
         color: #fff;
-        padding: 70px 0;
+        display: flex;
+        flex-direction: column;
+
+        &__second {
+            padding-left: 14vw;
+        }
     }
 
     &__buttons {
-        padding-bottom: 30px;
-        &__link {
-            display: flex;
-            background-color: #5e42b0;
-            border-radius: 20px;
-            font-size: .6rem;
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 0 5px calc(50% - 50px);
+        display: flex;
+        flex-direction: column;
 
-            & svg {
-                fill: #fff;
-                height: 1.5rem;
-                margin-right: 5px;
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5e42b0;
+            width: 87vw;
+            font-size: 2.5vw;            
+            border-radius: 20vw;
+            margin-bottom: 4vw;
+            
+            &__svg {
+                box-sizing: border-box;
+                flex-basis: 40%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 2vw 0;
+
+                & svg {
+                    width: 8vw;
+                    height: 8vw;
+                    padding-right: 3vw;
+                    fill: #fff;
+                }
+            }
+
+            &__text {
+                flex-basis: 60%;
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
             }
         }
     }
 }
 
-.main {
-    &__block {
-        &-white {
-            background-color: #fafafa;
+.athlets {
+    &__right,
+    &__left {
+        padding: 10vw 6.25% 15vw;
+
+        &--white {
+            padding-top: 0;
+            background: linear-gradient(to bottom, #fff 56%, #fafafa 44%);
         }
 
-        &-gray {
+        &--gray {
             background-color: #f5f4f9;
         }
 
-        &-purple {
+        &--purple {
             background-color: #5e42b0;
+            color: #f0eef8;
         }
 
-        &-purple-dark {
+        &--purple-dark {
             background-color: #090c35;
+            color: #fff;
         }
 
         &__header_one {
-            font-size: 2.5rem;
-            margin: 10px 0;
+            margin: 0;
+            font-size: 16vw;
+            font-weight: 600;
             color: #e7e7e7;
         }
 
         &__img {
             text-align: center;
-            margin-bottom: -30px;
-
-            & img {
-                max-width: 100%;
+            &--basketballer {
+                padding-bottom: 7vw;
+                & img{
+                    width: 100%;
+                }
             }
         }
 
         &__header_two {
-            margin: 50px 0 15px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            padding: 5vw 0;
 
             &__number {
-                font-size: .9rem;
+                font-size: 5vw;
                 border-bottom: 4px solid #5e42b0;
-                vertical-align: top;
+                box-sizing: border-box;
+                line-height: 1.1;                
                 color: #000;
             }
 
-            .main__block-purple &__number {
+            .athlets__right--purple &__number,
+            .athlets__left--purple &__number {
                 border-bottom: 4px solid #fff;
             }
 
-            .main__block-purple-dark &__number {
-                color: #7c5dce;
+            .athlets__right--purple-dark &__number,
+            .athlets__left--purple-dark &__number {
+                color: #8765dd;
                 border-bottom: 4px solid #fff;
             }
 
             &__text {
-                font-size: 1.5rem;
+                font-size: 8vw;
+                font-weight: 600;
                 color: #c1c1c1;
+                padding-left: 1.5vw;
             }
         }
 
         &__text {
-            margin-bottom: 50px;
-            font-weight: 600;
+            margin: 0;
+        }
+    }
+}
+
+.active {
+    &__block {
+        &__img img {
+            display: block;
+            width: 100%;
         }
 
-        .main__block-purple &__text,
-        .main__block-purple-dark &__text {
-            color: #fff;
-        }
-
-        &-img {
-            & img {
-                display: flex;
-                width: 100%;
-            }
+        &__main {
+            box-sizing: border-box;
+            padding: 8vw 6.25% 20vw;
+            position: relative;
 
             &__num {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #5e42b0;
-                width: 70px;
-                height: 65px;
-                margin-top: -50px;
-
-                & div {
-                    color: #fff;
-                    font-weight: 600;
-                    font-size: .95rem;
+                width: 22vw;
+                height: 22vw;
+                background: #5e42b0;
+                font-weight: 600;
+                color: #fff;
+                font-size: 4.5vw;
+                position: absolute;
+                top: 0;
+                transform: translateY(-85%);
+                & span {
                     border-bottom: 4px solid #8f7bc8;
                 }
             }
 
             &__header {
-                margin: 10px 0 5px;
-
-                &__text {
-                    font-size: 2rem;
-                    color: #e7e7e7;
-                }
+                margin: 0;
+                font-weight: 600;
+                font-size: 8.75vw;
+                color: #c1c1c1;
             }
 
             &__text {
-                margin: 0 0 70px;
-                font-weight: 600;
+                margin: 3vw 0 0;
+                font-size: 5vw;
             }
         }
     }
 }
 
-.footer {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_767.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    &__logo-one {
-        text-align: center;
-        padding: 100px 0 50px;
-        &__wrapper {
-            display: inline-block;
-            padding: 12px 9px 7px;
-            background-color: #53399e;
-            border-radius: 15px;
+.footer {
+    background: linear-gradient(rgba(19, 12, 50, 0.90), rgba(19, 12, 50, 0.90)), url(../img/game_767.jpg);
+    background-color: rgba(19, 12, 44, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 18vh 6.25% 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__logo {
+            box-sizing: border-box;
+            padding: 3vw 2.5vw 1.5vw;
+            background: linear-gradient(to bottom, #7656d6, #50379b);
+            border-radius: 4vw;
+            margin-bottom: 10vw;
 
             & svg {
-                width: 50px;
+                width: 18vw;
             }
-        }        
-    }
-
-    &__text {
-        text-align: center;
-        margin-bottom: 50px;
-        &__one {
-            color: #fff;
-            font-weight: 800;
-            font-size: 2rem;
         }
-        &__two {
-            color: #9b8ec1;
-            font-size: .9rem;
-            font-weight: 800;
+
+        &__text {
+            text-align: center;
+
+            &__one {
+                color: #fff;
+                font-weight: 600;
+                font-size: 10vw;
+            }
+
+            &__two {
+                color: #9b8ec1;
+                font-size: 4.375vw;
+            }
         }
     }
 
     &__buttons {
-        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
 
         &__link {
-            display: flex;
-            background-color: #5e42b0;
-            border-radius: 20px;
-            font-size: .6rem;
-            color: #fff;
             text-decoration: none;
-            padding: 5px 0 5px calc(50% - 50px);
-
-            & svg {
-                fill: #fff;
-                height: 1.5rem;
-                margin-right: 5px;
-            }
-        }
-    }
-
-    &__logo-two {
-        text-align: center;
-        padding: 50px 0 5px;
-
-        & svg {
-            width: 130px;
             color: #fff;
-        }
-    }
-}
-
-@media (min-width: 576px) {
-    .header {
-        &__logo {
-            & svg {
-                width: 180px;
-            }
-        }
-        &__text {
-            font-size: 2.5rem;
-            padding: 70px 50px;
-        }
-        &__buttons {
-            &__link {
-                border-radius: 50px;
-                font-size: .75rem;
-                padding: 16px 0 16px calc(50% - 85px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5e42b0;
+            width: 87vw;
+            font-size: 2.5vw;            
+            border-radius: 20vw;
+            margin-bottom: 4vw;
+            
+            &__svg {
+                box-sizing: border-box;
+                flex-basis: 40%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 2vw 0;
 
                 & svg {
-                    height: 2.1rem;
-                    margin-right: 20px;
+                    width: 7.8125vw;
+                    height: 7.8125vw;
+                    padding-right: 3.125vw;
+                    fill: #fff;
                 }
             }
+
+            &__text {
+                flex-basis: 60%;
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__logo {
+        & svg {
+            width: 42vw;
         }
     }
 }
 
 @media (min-width: 768px) {
     .header {
+        padding-bottom: 7vh;
         &__logo {
             & svg {
-                width: 210px;
+                width: 30vw;
             }
         }
 
         &__text {
-            font-size: 3.8rem;
-            padding: 150px 50px 230px;
+            font-size: 8vw;
+            line-height: 1.2;
         }
 
         &__buttons {
-            padding-bottom: 100px;
+            flex-direction: row;
 
             &__link {
-                border-radius: 50px;
-                font-size: .9rem;
-                padding: 25px 0 25px calc(50% - 110px);
+                width: 40vw;
+                font-size: 2vw;
 
-                & svg {
-                    height: 3rem;
-                    margin-right: 25px;
+                &__svg {
+                    justify-content: flex-start;
+                    padding: 0;
+                    padding-left: 3vw;
+                    flex-basis: 30%;
+
+                    & svg {
+                        padding: 2vw 0;
+                        width: 5vw;
+                        height: 5vw;
+                    }
                 }
+            }
+
+            &__link:first-child {
+                margin-right: 4vw;
             }
         }
     }
 
-    .main {
-        &__block {
+    .athlets {
 
-            &__img-half {
-                position: absolute;
-                z-index: 1;
-                top: 100px;
-                right: -20px;
-            }
-
-            &__img-half-two {
-                position: absolute;
-                z-index: 1;
-                top: 30px;
-                right: 0px;
-            }
-
+        &__right,
+        &__left {
+            padding: 3.5vw 6.25% 6vw;
+            position: relative;
             &__header_one {
-                font-size: 5rem;
-                margin: 50px 0 0;
+                padding-top: 3vh;
+                font-size: 10vw;
             }
 
             &__img {
-                margin-bottom: -70px;
+                position: absolute;
+                z-index: 1;
+
+                &--footballer {
+                    top: 8vh;
+                    left: 0;
+                    transform: translateX(-33%);
+                }
+
+                &--basketballer {
+                    top: 2vh;
+                    right: 0;
+                }
             }
 
             &__header_two {
-                margin: 50px 0 15px;
-
+                padding: 2vw 0 1vw;
                 &__number {
-                    font-size: 1.4rem;
+                    font-size: 2.5vw;
                 }
 
                 &__text {
-                    font-size: 2rem;
+                    font-size: 4vw;
                 }
             }
+        }
 
-            &-img {
+        &__right {
+
+            &--white,
+            &--gray,
+            &--purple,
+            &--purple-dark {
+                padding-left: 37vw;
+            }
+        }
+
+        &__left {
+
+            &--white,
+            &--gray,
+            &--purple,
+            &--purple-dark {
+                padding-right: 37vw;
+            }
+        }
+    }
+
+    .active {
+        &__block {
+    
+            &__main {
+                padding: 10vw 4vw 14vw;
+    
                 &__num {
-                    width: 90px;
-                    height: 85px;
-                    margin-top: -60px;
-
-                    & div {
-                        font-size: 1.2rem;
+                    width: 17vw;
+                    height: 17vw;
+                    font-size: 3.5vw;
+                    transform: translateY(-60%);
+                    & span {
+                        border-bottom: 4px solid #8f7bc8;
                     }
                 }
-
-                &__header {
-                    &__text {
-                        font-size: 3.5rem;
-                    }
+    
+                &__text {
+                    font-size: 3vw;
                 }
             }
         }
     }
 
-    .footer {
-        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1280.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        &__logo-one {
-            text-align: center;
-            padding: 100px 0 50px;
-            &__wrapper {
-                display: inline-block;
-                padding: 12px 9px 7px;
-                background-color: #53399e;
-                border-radius: 15px;
+    .footer {    
+        padding-top: 10vh;
+        &__logo-text {    
+            &__logo {
+                box-sizing: border-box;
+                padding: 3vw 2.5vw 1.5vw;
+                background: linear-gradient(to bottom, #7656d6, #50379b);
+                border-radius: 4vw;
+                margin-bottom: 10vw;
     
                 & svg {
-                    width: 80px;
+                    width: 13vw;
                 }
-            }        
-        }
-    
-        &__text {
-            margin-bottom: 200px;
-            &__one {
-                font-size: 5rem;
             }
-            &__two {
-                font-size: 2.3rem;
+    
+            &__text {
+                text-align: center;
+    
+                &__one {
+                    font-size: 10vw;
+                }
+    
+                &__two {
+                    font-size: 4vw;
+                }
             }
         }
     
         &__buttons {
-            padding-bottom: 100px;
+            flex-direction: row;
 
             &__link {
-                border-radius: 50px;
-                font-size: .9rem;
-                padding: 25px 0 25px calc(50% - 110px);
+                width: 40vw;
+                font-size: 2vw;
 
-                & svg {
-                    height: 3rem;
-                    margin-right: 25px;
+                &__svg {
+                    justify-content: flex-start;
+                    padding: 0;
+                    padding-left: 3vw;
+                    flex-basis: 30%;
+
+                    & svg {
+                        padding: 2vw 0;
+                        width: 5vw;
+                        height: 5vw;
+                    }
                 }
+            }
+
+            &__link:first-child {
+                margin-right: 4vw;
             }
         }
     
-        &__logo-two {
-            padding: 50px 0 15px;
-
+        &__logo {
             & svg {
-                width: 210px;
+                width: 30vw;
             }
         }
     }
-}
 
-@media (min-width: 992px) {
-    .header {
-        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1280.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }    
 }
 
 @media (min-width: 1200px) {
     .header {
-        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1920.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
+        background: linear-gradient(rgba(19, 12, 50, 0.90), rgba(19, 12, 50, 0.90)), url(../img/football_1920.jpg);
+        padding-bottom: 7vh;
         &__logo {
             & svg {
-                width: 210px;
+                width: 9vw;
             }
         }
-        &__text {
-            font-size: 5rem;
-            padding: 150px 50px 230px;
-        }
-        &__buttons {
-            padding-bottom: 110px;
-            &__link {
-                border-radius: 50px;
-                font-size: .9rem;
-                padding: 25px 0 25px calc(50% - 110px);
 
-                & svg {
-                    height: 3rem;
-                    margin-right: 25px;
+        &__text {
+            font-size: 4.5vw;
+            line-height: 1.2;
+            width: 79vw;
+
+            &__second {
+                align-self: flex-end;
+                padding-left: 0;
+            }
+        }
+
+        &__buttons {
+            flex-direction: row;
+
+            &__link {
+                width: 15vw;
+                font-size: .7vw;
+                margin-bottom: 3vw;
+
+                &__svg {
+                    justify-content: flex-start;
+                    padding: 0;
+                    padding-left: 1vw;
+                    // flex-basis: 30%;
+
+                    & svg {
+                        padding: 1vw 0;
+                        width: 2vw;
+                        height: 2vw;
+                    }
                 }
+            }
+
+            &__link:first-child {
+                margin-right: 4vw;
             }
         }
     }
 
-    .main {
-        &__block {
-            &-img {
-                &__num {
-                    margin: 60px 0 -100px -60px;
+    .athlets {
+
+        &__right,
+        &__left {
+            padding: 1vw 6.25% 4vw;
+            position: relative;
+
+            &--white {
+                background: linear-gradient(to bottom, #fff 50%, #fafafa 50%);
+            }
+
+            &__header_one {
+                padding-top: 3vh;
+                font-size: 4vw;
+            }
+
+            &__img {
+                position: absolute;
+                z-index: 1;
+
+                &--footballer {
+                    top: 2vh;
+                    left: 0;
+                    transform: translateX(30%);
+                    & img {
+                        width: 30vw;
+                    }
                 }
-                &__num.-left{
-                    margin: 60px -60px 0 -60px;
+
+                &--basketballer {
+                    top: 3vh;
+                    right: 5vw;
+                    & img {
+                        width: 50vw;
+                    }                    
                 }
-                &__header {
-                    padding: 0 0 60px 60px;
+            }
+
+            &__header_two {
+                padding: 2vw 0 1vw;
+                &__number {
+                    font-size: 1.5vw;
                 }
-    
+
                 &__text {
-                    padding-left: 60px;
+                    font-size: 2vw;
+                    padding-left: .5vw;
                 }
-            }            
+            }
+        }
+
+        &__right {
+
+            &--white,
+            &--gray,
+            &--purple,
+            &--purple-dark {
+                padding-left: 55vw;
+            }
+        }
+
+        &__left {
+
+            &--white,
+            &--gray,
+            &--purple,
+            &--purple-dark {
+                padding-right: 55vw;
+            }
         }
     }
-    
-    .footer {
-        background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1920.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        &__logo-one {
-            text-align: right;   
-            padding: 200px 0 300px;
-            &__wrapper {
-                display: inline-block;
-                padding: 15px 10px 10px;
-                border-radius: 15px;
-                & svg {
-                    width: 120px;
+
+    .active {
+        &__block {
+            display: flex;
+            
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            &__img {
+                width: 50%;
+                & img {
+                    height: 100%;
+                }
+            }
+
+            &__main {
+                padding: 8vw 4vw 5vw 7vw;
+                width: 50%;
+
+                &__num {
+                    width: 8vw;
+                    height: 8vw;
+                    font-size: 2vw;
+                    top: calc( 50% - 8vw );
+                    left: 0;
+                    transform: translateX(-50%);
+
+                    & span {
+                        border-bottom: 4px solid #8f7bc8;
+                    }
+                }
+
+                .active__block:nth-child(2n) &__num {
+                    left: 100%;
+                }
+
+                &__header {
+                    font-size: 4vw;
+                }
+
+                &__text {
+                    font-size: 1.5vw;
                 }
             }
         }
-    
-        &__text {
-            margin-bottom: 0;
-            padding-top: 175px;
+    }
 
-            &__one {
-                text-align: left
+    .footer {
+        padding-top: 15vh;
+
+        &__logo-text {
+            flex-direction: row;
+
+            &__logo {
+                padding: 3vw 2.5vw 1.5vw;
+                border-radius: 2vw;
+                margin-bottom: 0;
+                margin-right: 2.5vw;
+
+                & svg {
+                    width: 5vw;
+                }
             }
-            &__two {
-                text-align: left
+
+            &__text {
+                text-align: center;
+
+                &__one {
+                    font-size: 5vw;
+                }
+
+                &__two {
+                    font-size: 2vw;
+                }
             }
         }
-    
+
         &__buttons {
-            padding-bottom: 100px;
+            flex-direction: row;
 
             &__link {
-                border-radius: 50px;
-                font-size: .9rem;
-                padding: 25px 0 25px calc(50% - 110px);
+                width: 15vw;
+                font-size: .7vw;
+                margin-bottom: 3vw;
 
-                & svg {
-                    height: 3rem;
-                    margin-right: 25px;
+                &__svg {
+                    justify-content: flex-start;
+                    padding: 0;
+                    padding-left: 1vw;
+                    // flex-basis: 30%;
+
+                    & svg {
+                        padding: 1vw 0;
+                        width: 2vw;
+                        height: 2vw;
+                    }
                 }
             }
-        }
-    
-        &__logo-two {
-            padding: 50px 0 15px;
 
+            &__link:first-child {
+                margin-right: 4vw;
+            }
+        }
+
+        &__logo {
             & svg {
-                width: 210px;
+                width: 9vw;
             }
         }
     }

@@ -353,7 +353,7 @@ template {
 
 body {
   margin: 0;
-  font-family: 'MyOpenSans',Arial,sans-serif;
+  font-family: MyOpenSans, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -363,432 +363,591 @@ body {
 }
 
 .header {
-  background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_767.jpg);
+  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/football_767.jpg);
+  background-color: rgba(19, 12, 44, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header__logo {
-  text-align: center;
-  padding: 30px 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  padding: 5vh 6.25vw 14vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo svg {
-  width: 130px;
-  color: #fff;
+  width: 42vw;
 }
 
 .header__text {
   font-weight: 800;
-  font-size: 1.6rem;
+  font-size: 9vw;
   color: #fff;
-  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__text__second {
+  padding-left: 14vw;
 }
 
 .header__buttons {
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__buttons__link {
-  display: flex;
-  background-color: #5e42b0;
-  border-radius: 20px;
-  font-size: .6rem;
-  color: #fff;
   text-decoration: none;
-  padding: 5px 0 5px calc(50% - 50px);
-}
-
-.header__buttons__link svg {
-  fill: #fff;
-  height: 1.5rem;
-  margin-right: 5px;
-}
-
-.main__block-white {
-  background-color: #fafafa;
-}
-
-.main__block-gray {
-  background-color: #f5f4f9;
-}
-
-.main__block-purple {
-  background-color: #5e42b0;
-}
-
-.main__block-purple-dark {
-  background-color: #090c35;
-}
-
-.main__block__header_one {
-  font-size: 2.5rem;
-  margin: 10px 0;
-  color: #e7e7e7;
-}
-
-.main__block__img {
-  text-align: center;
-  margin-bottom: -30px;
-}
-
-.main__block__img img {
-  max-width: 100%;
-}
-
-.main__block__header_two {
-  margin: 50px 0 15px;
-}
-
-.main__block__header_two__number {
-  font-size: .9rem;
-  border-bottom: 4px solid #5e42b0;
-  vertical-align: top;
-  color: #000;
-}
-
-.main__block-purple .main__block__header_two__number {
-  border-bottom: 4px solid #fff;
-}
-
-.main__block-purple-dark .main__block__header_two__number {
-  color: #7c5dce;
-  border-bottom: 4px solid #fff;
-}
-
-.main__block__header_two__text {
-  font-size: 1.5rem;
-  color: #c1c1c1;
-}
-
-.main__block__text {
-  margin-bottom: 50px;
-  font-weight: 600;
-}
-
-.main__block-purple .main__block__text,
-.main__block-purple-dark .main__block__text {
   color: #fff;
-}
-
-.main__block-img img {
-  display: flex;
-  width: 100%;
-}
-
-.main__block-img__num {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #5e42b0;
-  width: 70px;
-  height: 65px;
-  margin-top: -50px;
+  width: 87vw;
+  font-size: 2.5vw;
+  border-radius: 20vw;
+  margin-bottom: 4vw;
 }
 
-.main__block-img__num div {
+.header__buttons__link__svg {
+  box-sizing: border-box;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+.header__buttons__link__svg svg {
+  width: 8vw;
+  height: 8vw;
+  padding-right: 3vw;
+  fill: #fff;
+}
+
+.header__buttons__link__text {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.athlets__right, .athlets__left {
+  padding: 10vw 6.25% 15vw;
+}
+
+.athlets__right--white, .athlets__left--white {
+  padding-top: 0;
+  background: linear-gradient(to bottom, #fff 56%, #fafafa 44%);
+}
+
+.athlets__right--gray, .athlets__left--gray {
+  background-color: #f5f4f9;
+}
+
+.athlets__right--purple, .athlets__left--purple {
+  background-color: #5e42b0;
+  color: #f0eef8;
+}
+
+.athlets__right--purple-dark, .athlets__left--purple-dark {
+  background-color: #090c35;
   color: #fff;
+}
+
+.athlets__right__header_one, .athlets__left__header_one {
+  margin: 0;
+  font-size: 16vw;
   font-weight: 600;
-  font-size: .95rem;
-  border-bottom: 4px solid #8f7bc8;
-}
-
-.main__block-img__header {
-  margin: 10px 0 5px;
-}
-
-.main__block-img__header__text {
-  font-size: 2rem;
   color: #e7e7e7;
 }
 
-.main__block-img__text {
-  margin: 0 0 70px;
+.athlets__right__img, .athlets__left__img {
+  text-align: center;
+}
+
+.athlets__right__img--basketballer, .athlets__left__img--basketballer {
+  padding-bottom: 7vw;
+}
+
+.athlets__right__img--basketballer img, .athlets__left__img--basketballer img {
+  width: 100%;
+}
+
+.athlets__right__header_two, .athlets__left__header_two {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 5vw 0;
+}
+
+.athlets__right__header_two__number, .athlets__left__header_two__number {
+  font-size: 5vw;
+  border-bottom: 4px solid #5e42b0;
+  box-sizing: border-box;
+  line-height: 1.1;
+  color: #000;
+}
+
+.athlets__right--purple .athlets__right__header_two__number,
+.athlets__left--purple .athlets__right__header_two__number, .athlets__right--purple .athlets__left__header_two__number,
+.athlets__left--purple .athlets__left__header_two__number {
+  border-bottom: 4px solid #fff;
+}
+
+.athlets__right--purple-dark .athlets__right__header_two__number,
+.athlets__left--purple-dark .athlets__right__header_two__number, .athlets__right--purple-dark .athlets__left__header_two__number,
+.athlets__left--purple-dark .athlets__left__header_two__number {
+  color: #8765dd;
+  border-bottom: 4px solid #fff;
+}
+
+.athlets__right__header_two__text, .athlets__left__header_two__text {
+  font-size: 8vw;
   font-weight: 600;
+  color: #c1c1c1;
+  padding-left: 1.5vw;
+}
+
+.athlets__right__text, .athlets__left__text {
+  margin: 0;
+}
+
+.active__block__img img {
+  display: block;
+  width: 100%;
+}
+
+.active__block__main {
+  box-sizing: border-box;
+  padding: 8vw 6.25% 20vw;
+  position: relative;
+}
+
+.active__block__main__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: 22vw;
+  background: #5e42b0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 4.5vw;
+  position: absolute;
+  top: 0;
+  transform: translateY(-85%);
+}
+
+.active__block__main__num span {
+  border-bottom: 4px solid #8f7bc8;
+}
+
+.active__block__main__header {
+  margin: 0;
+  font-weight: 600;
+  font-size: 8.75vw;
+  color: #c1c1c1;
+}
+
+.active__block__main__text {
+  margin: 3vw 0 0;
+  font-size: 5vw;
 }
 
 .footer {
-  background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_767.jpg);
+  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/game_767.jpg);
+  background-color: rgba(19, 12, 44, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  padding: 18vh 6.25% 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer__logo-one {
+.footer__logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo-text__logo {
+  box-sizing: border-box;
+  padding: 3vw 2.5vw 1.5vw;
+  background: linear-gradient(to bottom, #7656d6, #50379b);
+  border-radius: 4vw;
+  margin-bottom: 10vw;
+}
+
+.footer__logo-text__logo svg {
+  width: 18vw;
+}
+
+.footer__logo-text__text {
   text-align: center;
-  padding: 100px 0 50px;
 }
 
-.footer__logo-one__wrapper {
-  display: inline-block;
-  padding: 12px 9px 7px;
-  background-color: #53399e;
-  border-radius: 15px;
-}
-
-.footer__logo-one__wrapper svg {
-  width: 50px;
-}
-
-.footer__text {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.footer__text__one {
+.footer__logo-text__text__one {
   color: #fff;
-  font-weight: 800;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 10vw;
 }
 
-.footer__text__two {
+.footer__logo-text__text__two {
   color: #9b8ec1;
-  font-size: .9rem;
-  font-weight: 800;
+  font-size: 4.375vw;
 }
 
 .footer__buttons {
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__buttons__link {
-  display: flex;
-  background-color: #5e42b0;
-  border-radius: 20px;
-  font-size: .6rem;
-  color: #fff;
   text-decoration: none;
-  padding: 5px 0 5px calc(50% - 50px);
-}
-
-.footer__buttons__link svg {
-  fill: #fff;
-  height: 1.5rem;
-  margin-right: 5px;
-}
-
-.footer__logo-two {
-  text-align: center;
-  padding: 50px 0 5px;
-}
-
-.footer__logo-two svg {
-  width: 130px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e42b0;
+  width: 87vw;
+  font-size: 2.5vw;
+  border-radius: 20vw;
+  margin-bottom: 4vw;
 }
 
-@media (min-width: 576px) {
-  .header__logo svg {
-    width: 180px;
-  }
-  .header__text {
-    font-size: 2.5rem;
-    padding: 70px 50px;
-  }
-  .header__buttons__link {
-    border-radius: 50px;
-    font-size: .75rem;
-    padding: 16px 0 16px calc(50% - 85px);
-  }
-  .header__buttons__link svg {
-    height: 2.1rem;
-    margin-right: 20px;
-  }
+.footer__buttons__link__svg {
+  box-sizing: border-box;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+.footer__buttons__link__svg svg {
+  width: 7.8125vw;
+  height: 7.8125vw;
+  padding-right: 3.125vw;
+  fill: #fff;
+}
+
+.footer__buttons__link__text {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.footer__logo svg {
+  width: 42vw;
 }
 
 @media (min-width: 768px) {
+  .header {
+    padding-bottom: 7vh;
+  }
   .header__logo svg {
-    width: 210px;
+    width: 30vw;
   }
   .header__text {
-    font-size: 3.8rem;
-    padding: 150px 50px 230px;
+    font-size: 8vw;
+    line-height: 1.2;
   }
   .header__buttons {
-    padding-bottom: 100px;
+    flex-direction: row;
   }
   .header__buttons__link {
-    border-radius: 50px;
-    font-size: .9rem;
-    padding: 25px 0 25px calc(50% - 110px);
+    width: 40vw;
+    font-size: 2vw;
   }
-  .header__buttons__link svg {
-    height: 3rem;
-    margin-right: 25px;
+  .header__buttons__link__svg {
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 3vw;
+    flex-basis: 30%;
   }
-  .main__block__img-half {
+  .header__buttons__link__svg svg {
+    padding: 2vw 0;
+    width: 5vw;
+    height: 5vw;
+  }
+  .header__buttons__link:first-child {
+    margin-right: 4vw;
+  }
+  .athlets__right, .athlets__left {
+    padding: 3.5vw 6.25% 6vw;
+    position: relative;
+  }
+  .athlets__right__header_one, .athlets__left__header_one {
+    padding-top: 3vh;
+    font-size: 10vw;
+  }
+  .athlets__right__img, .athlets__left__img {
     position: absolute;
     z-index: 1;
-    top: 100px;
-    right: -20px;
   }
-  .main__block__img-half-two {
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    right: 0px;
+  .athlets__right__img--footballer, .athlets__left__img--footballer {
+    top: 8vh;
+    left: 0;
+    transform: translateX(-33%);
   }
-  .main__block__header_one {
-    font-size: 5rem;
-    margin: 50px 0 0;
+  .athlets__right__img--basketballer, .athlets__left__img--basketballer {
+    top: 2vh;
+    right: 0;
   }
-  .main__block__img {
-    margin-bottom: -70px;
+  .athlets__right__header_two, .athlets__left__header_two {
+    padding: 2vw 0 1vw;
   }
-  .main__block__header_two {
-    margin: 50px 0 15px;
+  .athlets__right__header_two__number, .athlets__left__header_two__number {
+    font-size: 2.5vw;
   }
-  .main__block__header_two__number {
-    font-size: 1.4rem;
+  .athlets__right__header_two__text, .athlets__left__header_two__text {
+    font-size: 4vw;
   }
-  .main__block__header_two__text {
-    font-size: 2rem;
+  .athlets__right--white, .athlets__right--gray, .athlets__right--purple, .athlets__right--purple-dark {
+    padding-left: 37vw;
   }
-  .main__block-img__num {
-    width: 90px;
-    height: 85px;
-    margin-top: -60px;
+  .athlets__left--white, .athlets__left--gray, .athlets__left--purple, .athlets__left--purple-dark {
+    padding-right: 37vw;
   }
-  .main__block-img__num div {
-    font-size: 1.2rem;
+  .active__block__main {
+    padding: 10vw 4vw 14vw;
   }
-  .main__block-img__header__text {
-    font-size: 3.5rem;
+  .active__block__main__num {
+    width: 17vw;
+    height: 17vw;
+    font-size: 3.5vw;
+    transform: translateY(-60%);
+  }
+  .active__block__main__num span {
+    border-bottom: 4px solid #8f7bc8;
+  }
+  .active__block__main__text {
+    font-size: 3vw;
   }
   .footer {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 10vh;
   }
-  .footer__logo-one {
+  .footer__logo-text__logo {
+    box-sizing: border-box;
+    padding: 3vw 2.5vw 1.5vw;
+    background: linear-gradient(to bottom, #7656d6, #50379b);
+    border-radius: 4vw;
+    margin-bottom: 10vw;
+  }
+  .footer__logo-text__logo svg {
+    width: 13vw;
+  }
+  .footer__logo-text__text {
     text-align: center;
-    padding: 100px 0 50px;
   }
-  .footer__logo-one__wrapper {
-    display: inline-block;
-    padding: 12px 9px 7px;
-    background-color: #53399e;
-    border-radius: 15px;
+  .footer__logo-text__text__one {
+    font-size: 10vw;
   }
-  .footer__logo-one__wrapper svg {
-    width: 80px;
-  }
-  .footer__text {
-    margin-bottom: 200px;
-  }
-  .footer__text__one {
-    font-size: 5rem;
-  }
-  .footer__text__two {
-    font-size: 2.3rem;
+  .footer__logo-text__text__two {
+    font-size: 4vw;
   }
   .footer__buttons {
-    padding-bottom: 100px;
+    flex-direction: row;
   }
   .footer__buttons__link {
-    border-radius: 50px;
-    font-size: .9rem;
-    padding: 25px 0 25px calc(50% - 110px);
+    width: 40vw;
+    font-size: 2vw;
   }
-  .footer__buttons__link svg {
-    height: 3rem;
-    margin-right: 25px;
+  .footer__buttons__link__svg {
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 3vw;
+    flex-basis: 30%;
   }
-  .footer__logo-two {
-    padding: 50px 0 15px;
+  .footer__buttons__link__svg svg {
+    padding: 2vw 0;
+    width: 5vw;
+    height: 5vw;
   }
-  .footer__logo-two svg {
-    width: 210px;
+  .footer__buttons__link:first-child {
+    margin-right: 4vw;
   }
-}
-
-@media (min-width: 992px) {
-  .header {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .footer__logo svg {
+    width: 30vw;
   }
 }
 
 @media (min-width: 1200px) {
   .header {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/football_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/football_1920.jpg);
+    padding-bottom: 7vh;
   }
   .header__logo svg {
-    width: 210px;
+    width: 9vw;
   }
   .header__text {
-    font-size: 5rem;
-    padding: 150px 50px 230px;
+    font-size: 4.5vw;
+    line-height: 1.2;
+    width: 79vw;
+  }
+  .header__text__second {
+    align-self: flex-end;
+    padding-left: 0;
   }
   .header__buttons {
-    padding-bottom: 110px;
+    flex-direction: row;
   }
   .header__buttons__link {
-    border-radius: 50px;
-    font-size: .9rem;
-    padding: 25px 0 25px calc(50% - 110px);
+    width: 15vw;
+    font-size: .7vw;
+    margin-bottom: 3vw;
   }
-  .header__buttons__link svg {
-    height: 3rem;
-    margin-right: 25px;
+  .header__buttons__link__svg {
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 1vw;
   }
-  .main__block-img__num {
-    margin: 60px 0 -100px -60px;
+  .header__buttons__link__svg svg {
+    padding: 1vw 0;
+    width: 2vw;
+    height: 2vw;
   }
-  .main__block-img__num.-left {
-    margin: 60px -60px 0 -60px;
+  .header__buttons__link:first-child {
+    margin-right: 4vw;
   }
-  .main__block-img__header {
-    padding: 0 0 60px 60px;
+  .athlets__right, .athlets__left {
+    padding: 1vw 6.25% 4vw;
+    position: relative;
   }
-  .main__block-img__text {
-    padding-left: 60px;
+  .athlets__right--white, .athlets__left--white {
+    background: linear-gradient(to bottom, #fff 50%, #fafafa 50%);
+  }
+  .athlets__right__header_one, .athlets__left__header_one {
+    padding-top: 3vh;
+    font-size: 4vw;
+  }
+  .athlets__right__img, .athlets__left__img {
+    position: absolute;
+    z-index: 1;
+  }
+  .athlets__right__img--footballer, .athlets__left__img--footballer {
+    top: 2vh;
+    left: 0;
+    transform: translateX(30%);
+  }
+  .athlets__right__img--footballer img, .athlets__left__img--footballer img {
+    width: 30vw;
+  }
+  .athlets__right__img--basketballer, .athlets__left__img--basketballer {
+    top: 3vh;
+    right: 5vw;
+  }
+  .athlets__right__img--basketballer img, .athlets__left__img--basketballer img {
+    width: 50vw;
+  }
+  .athlets__right__header_two, .athlets__left__header_two {
+    padding: 2vw 0 1vw;
+  }
+  .athlets__right__header_two__number, .athlets__left__header_two__number {
+    font-size: 1.5vw;
+  }
+  .athlets__right__header_two__text, .athlets__left__header_two__text {
+    font-size: 2vw;
+    padding-left: .5vw;
+  }
+  .athlets__right--white, .athlets__right--gray, .athlets__right--purple, .athlets__right--purple-dark {
+    padding-left: 55vw;
+  }
+  .athlets__left--white, .athlets__left--gray, .athlets__left--purple, .athlets__left--purple-dark {
+    padding-right: 55vw;
+  }
+  .active__block {
+    display: flex;
+  }
+  .active__block:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  .active__block__img {
+    width: 50%;
+  }
+  .active__block__img img {
+    height: 100%;
+  }
+  .active__block__main {
+    padding: 8vw 4vw 5vw 7vw;
+    width: 50%;
+  }
+  .active__block__main__num {
+    width: 8vw;
+    height: 8vw;
+    font-size: 2vw;
+    top: calc( 50% - 8vw);
+    left: 0;
+    transform: translateX(-50%);
+  }
+  .active__block__main__num span {
+    border-bottom: 4px solid #8f7bc8;
+  }
+  .active__block:nth-child(2n) .active__block__main__num {
+    left: 100%;
+  }
+  .active__block__main__header {
+    font-size: 4vw;
+  }
+  .active__block__main__text {
+    font-size: 1.5vw;
   }
   .footer {
-    background: linear-gradient(rgba(19, 12, 44, 0.8), rgba(19, 12, 44, 0.8)), url(../img/game_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 15vh;
   }
-  .footer__logo-one {
-    text-align: right;
-    padding: 200px 0 300px;
+  .footer__logo-text {
+    flex-direction: row;
   }
-  .footer__logo-one__wrapper {
-    display: inline-block;
-    padding: 15px 10px 10px;
-    border-radius: 15px;
-  }
-  .footer__logo-one__wrapper svg {
-    width: 120px;
-  }
-  .footer__text {
+  .footer__logo-text__logo {
+    padding: 3vw 2.5vw 1.5vw;
+    border-radius: 2vw;
     margin-bottom: 0;
-    padding-top: 175px;
+    margin-right: 2.5vw;
   }
-  .footer__text__one {
-    text-align: left;
+  .footer__logo-text__logo svg {
+    width: 5vw;
   }
-  .footer__text__two {
-    text-align: left;
+  .footer__logo-text__text {
+    text-align: center;
+  }
+  .footer__logo-text__text__one {
+    font-size: 5vw;
+  }
+  .footer__logo-text__text__two {
+    font-size: 2vw;
   }
   .footer__buttons {
-    padding-bottom: 100px;
+    flex-direction: row;
   }
   .footer__buttons__link {
-    border-radius: 50px;
-    font-size: .9rem;
-    padding: 25px 0 25px calc(50% - 110px);
+    width: 15vw;
+    font-size: .7vw;
+    margin-bottom: 3vw;
   }
-  .footer__buttons__link svg {
-    height: 3rem;
-    margin-right: 25px;
+  .footer__buttons__link__svg {
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 1vw;
   }
-  .footer__logo-two {
-    padding: 50px 0 15px;
+  .footer__buttons__link__svg svg {
+    padding: 1vw 0;
+    width: 2vw;
+    height: 2vw;
   }
-  .footer__logo-two svg {
-    width: 210px;
+  .footer__buttons__link:first-child {
+    margin-right: 4vw;
+  }
+  .footer__logo svg {
+    width: 9vw;
   }
 }
