@@ -363,7 +363,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/football_767.jpg);
+  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../images/football_767.jpg);
   background-color: rgba(19, 12, 44, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
@@ -558,7 +558,7 @@ body {
 }
 
 .footer {
-  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/game_767.jpg);
+  background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../images/game_767.jpg);
   background-color: rgba(19, 12, 44, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
@@ -784,7 +784,7 @@ body {
 
 @media (min-width: 1200px) {
   .header {
-    background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../img/football_1920.jpg);
+    background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../images/football_1920.jpg);
     padding-bottom: 7vh;
   }
   .header__logo svg {
@@ -903,6 +903,7 @@ body {
     font-size: 1.5vw;
   }
   .footer {
+    background: linear-gradient(rgba(19, 12, 50, 0.9), rgba(19, 12, 50, 0.9)), url(../images/game_1920.jpg);
     padding-top: 15vh;
   }
   .footer__logo-text {
