@@ -1,1 +1,1 @@
-# web10
+ССылка на GitHub Pages https://arkanaman.github.io/
